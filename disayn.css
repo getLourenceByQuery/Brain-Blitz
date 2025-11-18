@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "digital-7";
+  src: url(digital-7.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "Caveat Brush", Arial, Helvetica;
+  font-size: 18px;
+  overflow: hidden;
+  user-select: none;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(191, 191, 191);
+}
+#logo {
+  display: flex;
+  align-items: center;
+  color: rgb(46, 46, 46);
+  cursor: pointer;
+  position: absolute;
+  top: 13%;
+  left: 14%;
+}
+
+#logo img {
+  width: 1;
+  height: 60px;
+  pointer-events: none;
+}
+#nav {
+  width: 20%;
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  font-size: 24px;
+}
+#nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#nav ul li a {
+  color: rgb(51, 51, 51);
+}
+#nav li:hover {
+  transform: scale(1.1);
+}
+
+#diff {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  padding: 40px;
+  width: 30%;
+  border-radius: 0;
+  font-size: 20px;
+  border: none;
+  border-radius: 14px;
+  font-family: "Caveat Brush";
+  color: white;
+  box-shadow: 1px 1px 17px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.btn:first-child {
+  background-color: rgb(122, 122, 122);
+}
+.btn:nth-child(2) {
+  background-color: rgb(78, 78, 78);
+}
+.btn:nth-child(3) {
+  background-color: rgb(40, 40, 40);
+}
+
+.btn:hover {
+  transform: scale(1.07);
+}
+
+#start {
+  color: rgb(37, 37, 37);
+  border: none;
+  font-family: "Caveat Brush", Courier, monospace;
+  background-color: transparent;
+  font-size: 35px;
+  position: absolute;
+  bottom: 13%;
+  right: 17%;
+}
+
+#start:hover {
+  transform: scale(1.1);
+}
+
+#mechanics {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s, visibility 0.4s, ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+#mechanics:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+#rules {
+  width: 50%;
+  height: 80%;
+  background-color: rgb(216, 216, 216);
+  padding: 30px;
+  border-radius: 15px;
+  position: relative;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+#rules p,
+#rules h2,
+#rules h1,
+#rules h3 {
+  text-align: center;
+}
+
+#close {
+  position: absolute;
+  top: 5%;
+  right: 22%;
+  width: 2em;
+  height: 2em;
+  background-color: rgb(32, 32, 32);
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+}
+
+#about {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s, visibility 0.3s, ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#about:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+#us {
+  width: 50%;
+  height: 80%;
+  background-color: rgb(216, 216, 216);
+  padding: 30px;
+  border-radius: 15px;
+  position: relative;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+#Game {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(191, 191, 191);
+}
+
+#ready {
+  font-size: 15em;
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: rgb(204, 0, 0);
+  text-shadow: 4px 7px 15px rgba(0, 0, 0, 0.6);
+}
+
+#back {
+  color: rgb(37, 37, 37);
+  font-size: 35px;
+}
+
+#back:hover {
+  transform: scale(1.1);
+}
+
+#seqField {
+  width: 30%;
+  height: 20%;
+  background-color: rgb(79, 79, 79);
+  box-shadow: 1px 1px 13px 7px rgba(0, 0, 0, 0.8);
+  border-radius: 14px;
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+}
+
+#typeTime {
+  font-size: 10em;
+  color: red;
+}
+
+#Field {
+  font-size: 4em;
+  color: white;
+
+  visibility: hidden;
+  opacity: 0;
+}
+.visible {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.hidden {
+  display: none !important;
+}
+
+#answer {
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  font-size: 4em;
+  text-align: center;
+  font-family: "Caveat Brush";
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border: none;
+}
+
+#answer:focus {
+  border: none;
+  border-bottom: 3px solid rgb(65, 65, 65);
+  outline: none;
+  caret-color: rgb(73, 73, 73);
+}
+
+#vtt {
+  font-size: 2em;
+}
+
+#submitBTN {
+  position: absolute;
+  top: 180%;
+  left: 47%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-family: "Caveat Brush";
+  font-size: 2em;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+#submitBTN:hover {
+  transform: scale(1.1);
+}
+
+#inputCon {
+  width: 40%;
+  height: 15%;
+  position: absolute;
+  top: 160%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#win{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(191, 191, 191);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  display: none;
+}
+ #win h1 {
+  font-size: 12em;
+ }
+
+#lose{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(191, 191, 191);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  display: none;
+}
+
+#lose h1{
+  font-size: 12em;
+}
+
+.reward {
+  width: 30%;
+  height: 60%;
+  background-color: white;
+  position: absolute;
+  border-radius: 14px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  visibility: hidden;
+  transition: transform 5s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%,-50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%,-50%) scale(1.05); 
+  }
+  100% {
+    transform: translate(-50%,-50%) scale(1);
+  }
+}
+
+.openReward {
+  top: 50%;
+  transform: translate(-50%,-50%) scale(1);
+  visibility: visible;
+}
+
+#randomReward {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  box-shadow: 4px 3px 45px 10px rgba(199, 202, 0, 0.533);
+}
+
+#lossCat{
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  box-shadow: 4px 3px 15px 15px rgba(0, 0, 0, 0.632);
+}
+
+
+
