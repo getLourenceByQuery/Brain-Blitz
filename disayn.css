@@ -383,6 +383,11 @@ body {
   box-shadow: 4px 3px 15px 15px rgba(0, 0, 0, 0.632);
 }
 
+
+
+
+
+
 @media screen and (max-width: 768px) {
   body {
     font-size: 16px;
@@ -397,7 +402,7 @@ body {
   }
 
   #logo img {
-    height: 40px;
+    display: none;
   }
 
   #nav {
@@ -405,7 +410,7 @@ body {
     position: absolute;
     top: 15%;
     right: 5%;
-    left: 5%;
+    left: 2%;
     font-size: 18px;
   }
 
@@ -501,5 +506,6 @@ body {
     height: 60%;
   }
 }
+
 
 
