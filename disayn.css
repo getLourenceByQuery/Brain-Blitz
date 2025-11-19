@@ -383,5 +383,123 @@ body {
   box-shadow: 4px 3px 15px 15px rgba(0, 0, 0, 0.632);
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  #logo {
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  #logo img {
+    height: 40px;
+  }
+
+  #nav {
+    width: 90%;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    left: 5%;
+    font-size: 18px;
+  }
+
+  #nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #diff {
+    width: 80%;
+    flex-direction: column;
+    gap: 20px;
+    top: 55%;
+  }
+
+  .btn {
+    width: 80%;
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .btn:hover {
+    transform: scale(1.03);
+  }
+
+  #start {
+    font-size: 28px;
+    bottom: 5%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  #start:hover {
+    transform: scale(1.05) translateX(50%);
+  }
+
+  #rules,
+  #us {
+    width: 90%;
+    height: 90%;
+    padding: 15px;
+  }
+
+  #close {
+    top: 10px;
+    right: 10px;
+  }
+
+  #ready {
+    font-size: 5em;
+  }
+
+  #seqField {
+    width: 80%;
+    height: 15%;
+  }
+
+  #typeTime {
+    font-size: 5em;
+  }
+
+  #Field {
+    font-size: 2.5em;
+  }
+
+  #inputCon {
+    width: 80%;
+    height: auto;
+  }
+
+  #answer {
+    font-size: 2em;
+    letter-spacing: 0.1em;
+  }
+
+  #submitBTN {
+    font-size: 1.5em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #submitBTN:hover {
+    transform: scale(1.05) translateX(-50%);
+  }
+
+  #win h1,
+  #lose h1 {
+    font-size: 6em;
+  }
+
+  .reward {
+    width: 80%;
+    height: 60%;
+  }
+}
 
 
