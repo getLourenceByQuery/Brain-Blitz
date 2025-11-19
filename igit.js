@@ -239,7 +239,7 @@ function displayReward(){
     top: 0,
     behavior: 'smooth'
   });
-        cat.pause();
+        winning.pause();
 
     },1000);
   });
@@ -370,4 +370,5 @@ function displayDiff(){
 //---------------------------------------------------------------------------------------------------
 
 displayReward();
+
 displayDiff();
