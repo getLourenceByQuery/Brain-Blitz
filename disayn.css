@@ -404,6 +404,7 @@ body {
   #logo img {
     height: 40px;
     display: none;
+    visibility: hidden;
   }
 
   #nav {
@@ -507,6 +508,7 @@ body {
     height: 60%;
   }
 }
+
 
 
 
