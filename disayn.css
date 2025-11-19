@@ -402,6 +402,7 @@ body {
   }
 
   #logo img {
+    height: 40px;
     display: none;
   }
 
@@ -506,6 +507,7 @@ body {
     height: 60%;
   }
 }
+
 
 
 
