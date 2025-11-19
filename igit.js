@@ -36,6 +36,8 @@
     }
 
     document.addEventListener('DOMContentLoaded', function(){
+        cat.pause();
+        winning.pause();
       window.scrollTo({
         top: 0,
         behavior: "smooth"
@@ -234,13 +236,12 @@ function displayReward(){
   A.href = rewardSCR;
 
   A.addEventListener('click', function(){
+      winning.pause();
     setTimeout(() => {
-    window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-        winning.pause();
-
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
     },1000);
   });
 }
@@ -372,3 +373,4 @@ function displayDiff(){
 displayReward();
 
 displayDiff();
+
